@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple web page design</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		jssor_1_slider_init = function() {
+
+			var jssor_1_SlideshowTransitions = [
+			{$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+			{$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+			];
+
+			var jssor_1_options = {
+				$AutoPlay: 1,
+				$SlideshowOptions: {
+					$Class: $JssorSlideshowRunner$,
+					$Transitions: jssor_1_SlideshowTransitions,
+					$TransitionsOrder: 1
+				},
+				$ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$
+				},
+				$ThumbnailNavigatorOptions: {
+					$Class: $JssorThumbnailNavigator$,
+					$Cols: 1,
+					$Align: 0,
+					$NoDrag: true
+				}
+			};
+
+			var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+		};
+	</script> 
+</head>
+<body id="home">
+	<header>
+		<div class="top-header">			
+			<div class="container">
+				<div class="pull-left top-info">
+					<ul>
+						<li><i class="fa fa-phone"></i> +91 40-40185150</li>
+						<li><i class="fa fa-envelope"></i> abc@gmail.com</li>
+					</ul>
+				</div>
+				<div class="pull-right top-links">
+					<ul>
+						<li><a href="#">About Us</a></li>				
+						<li><a href="#">Login/Sign Up</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="main-header">
+			<div class="container">
+				<div class="pull-left logo">
+					<img src="images/logo.jpg" width="193" height="50" alt="simple logo">
+				</div>
+				<div class="pull-right">
+					<nav class="pull-left">
+						<ul>
+							   <li class="active"><a href="#">Home</a></li>
+                               <li><a href="#">About Us</a></li>
+      							<li><a href="#">Products</a></li>
+     							 <li><a href="#">Modules</a></li>
+      							<li><a href="#">Request a Demo</a></li>
+      							<li><a href="#">Contact us</a></li>	
+      												</ul>
+					</nav>
+					<div class="search-wrapper pull-right">
+						<button class="search" type="button"><i class="fa fa-search"></i></button>
+						<div class="search-box">
+							<input type="text" name="search" placeholder="Enter search here...">
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</header>
+	<!-- / header -->
+
+	<div class="slider">
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1400px;height:600px;overflow:hidden;visibility:hidden; max-width: 100%">
+			<!-- Loading Screen -->
+			<div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7); max-width: 100%"></div>
+			<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1400px;height:800px;overflow:hidden;">
+				<div>
+					<img data-u="image" src="images/AIG-home.jpg" />
+					<div u="thumb">
+						<h1>THE SIMPLEST WAY <br>TO MANAGE YOUR <br>IVF PRACTICE</h1>
+						
+						<a href="#" class="btn-yellow">Explore More</a>
+					</div>
+				</div>
+			
+			<!-- Thumbnail Navigator -->
+			<div u="thumbnavigator" style="position:absolute;bottom:160px;width:700px;height:185px;color:#FFF;" data-autocenter="1" data-scale-bottom="0.75">
+				<div u="slides">
+					<div u="prototype" style="position:absolute;top:0;left:0;width:700px;height:185px; text-align: center; padding: 10px 0">
+						<div u="thumbnailtemplate"></div>
+					</div>
+				</div>
+			</div>
+			<!-- Arrow Navigator -->
+			<div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+				</svg>
+			</div>
+			<div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<!-- / .slider -->
+
+	<section id="features" class="intro text-center">
+		<div class="container">
+			<h2>About us</h2>	
+		    <p>Fertility treatment software needs to be able to manage all the interactions between the various stakeholders of the hospital. It also should be able to cater to tracking the progress of the treatments and help patients view the progress. This is due to the fact, that IVF treatment cycle involves regular interaction and co-ordination between people such as clinicians, embryologist, nursing staff, admin. manager, front office staff, the pharmacy stock keeper and the IVF patient. </p>
+
+			<p>ARTis™ (Assisted Reproductive Technology Information System) – a  unique and futuristic web-based Fertility treatment software that addresses the need for clinical, administrative, and patient support services of your IVF centre.
+			Our solution springs out of a thorough understanding of the IVF process and managing IVF centers. This simple and effective solution is a result of the collaborative effort of proven and highly experienced IT professionals and IVF specialists.	</p>
+			
+	</section>
+	<!-- / .intro -->
+
+	<section id="services" class="services bg-light-grey text-center">
+		<div class="container">
+			<h1>WHY ARTis</h1>	
+			<p> Following are the factors to be considered while choosing a good Fertility treatment software. ARTis scores well on all these key factors and help you scale up in your operations and grow in line with your plans. ARTis is a fully integrated, comprehensive solution and yet easy to set up and use. It helps in optimization of the hospital resources and decision making. Being a cloud offering, it supports doctors to remotely support multiple centres. </p>
+			<div class="row">
+				<div class="column">
+					<img src="images/why_us/1.jpg" width="149" height="132" alt="icon1">
+					<h2>Fully Responsive</h2>
+					<div class="column-text">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitlorem quis bibendum auctor, 
+						nisi elit consequat This is Photoshop's version  of Lorem Ipsum. 
+					</div>
+					<a href="#" class="btn-yellow">Explore More</a>
+				</div>
+				<div class="column">
+					<img src="images/why_us/2.jpg" width="149" height="132" alt="icon1">
+					<h2>Awesome Features</h2>
+					<div class="column-text">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitlorem quis bibendum auctor, 
+						nisi elit consequat This is Photoshop's version  of Lorem Ipsum. 
+					</div>
+					<a href="#" class="btn-yellow">Explore More</a>
+				</div>
+				<div class="column mr0">
+					<img src="images/why_us/3.jpg" width="149" height="132" alt="icon1">
+					<h2>Better Coordnation</h2>
+					<div class="column-text">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitlorem quis bibendum auctor, 
+						nisi elit consequat This is Photoshop's version  of Lorem Ipsum. 
+					</div>
+					<a href="#" class="btn-yellow">Explore More</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+	<!-- / .services -->
+	
+	
+<section>
+<div class="row">
+    <div class="col-lg-12 ">
+
+
+  <div class="alt-features-item align-center">	
+  <div class="col-sm-6 col-md-4 col-lg-4">
+  	<div class="alt-features-icon">
+   <img src="images/products/1.jpg" alt="1"> </div> 
+    <p>Comprehensive ARTis products with complete features</p>
+  </div>
+
+
+  	<div class="col-sm-6 col-md-4 col-lg-4">
+  	  <div class="alt-features-item align-center">		
+  	<div class="alt-features-icon">
+    <img src="images/products/2.jpg" class="img-rounded" alt=""/>
+    <p>Standard ARTis product suitable for smaller setups</p>
+  </div>
+
+ 	<div class="col-sm-6 col-md-4 col-lg-4">
+ 		  <div class="alt-features-item align-center">	
+  	<div class="alt-features-icon">
+    <img src="images/products/3.jpg" class="img-rounded" alt=""/>
+    <p>Advanced electronic witnessing system for IVF Centres</p>
+  </div>
+
+  
+  	<div class="col-sm-6 col-md-4 col-lg-6">
+  		  <div class="alt-features-item align-center">	
+  	<div class="alt-features-icon">
+    <img src="images/products/4.jpg" class="img-rounded"alt=""/>
+    <p>Product for Genetics service providers to seem lessly connect w</p>
+  </div>
+
+  
+  	<div class="col-sm-6 col-md-4 col-lg-6">
+  	  <div class="alt-features-item align-center">	
+  	<div class="alt-features-icon">
+    <img src="images/products/5.jpg" class="img-rounded"alt=""/>
+    <p>Offers effective management of Gamete freezing</p>
+  </div>
+</div>
+            
+           </div>
+
+
+
+  
+         
+       </div>
+   </div>
+</div>
+</div>
+
+</section>
+       
+   
+			
+
+		<section id="services" class="services bg-light-grey text-center">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<h2>WHAT'S IN IT FOR ME?</h2>
+					<p>ARTis Fertility treatment software is comprehensive and hence took requirements and needs of every stake holder into consideration. It has something for every business user of the IVF clinic or hospital and it facilitates the various interactions among the users and hence makes the workflow very effective and efficient.</p>
+				</div>
+				<div class="row slideanim">
+    <div class="col-sm-2">
+      <img src="images/me/1.jpg">
+    
+      <p>Clinicial/Doctor</p>
+    </div>
+    <div class="col-sm-2">
+      <img src="images/me/2.jpg">
+      
+      <p>Ferility Nurse Specialist</p>
+    </div>
+    <div class="col-sm-2">
+    <img src="images/me/3.jpg">
+    
+      <p>Embryologist</p>
+    </div>
+        <div class="col-sm-2">
+      <img src="images/me/4.jpg">
+     
+      <p>Patient</p>
+    </div>
+        <div class="col-sm-2">
+      <img src="images/me/5.jpg">
+    
+      <p>Centre Manager</p>
+    </div>
+  </div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+	<!-- / .subscribe -->
+
+	
+	<!-- / .contact -->
+	<footer class="section-gap footer-widget-area">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				
+						
+						
+									
+			
+					<div class="col-lg-4 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">Quick Links</h6>
+							<ul class="footer-nav">
+								<li><a href="#">Managed Website</a></li>
+								<li><a href="#">Manage Reputation</a></li>
+								<li><a href="#">Power Tools</a></li>
+								<li><a href="#">Marketing Service</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">USER BENEFITS</h6>
+							<ul class="footer-nav">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Main Features</a></li>
+								<li><a href="#">Offered Services</a></li>
+								<li><a href="#">Latest Portfolio</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">CONTACT US</h6>
+							<ul class="footer-nav">
+								<li><a href="#">T: +91-40-40185150 </a></li>
+								<li><a href="#">T: +91-40-40207772</a></li>
+								<li><a href="#">M: +91-98663 04146</a></li>
+								<li><a href="#">E: info@artisivf.com</a></li>
+
+							</ul>
+						</div>
+						<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+					</div>
+				</div>
+
+
+
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap" color="white">
+					<p class="footer-text m-0">Copyright © 2018 All rights reserved   |   ARTis <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/">ARTis</a></p>
+					
+				</div>
+			</div>
+		</footer>
+
+	
+	<!-- / footer -->
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jssor.slider-25.0.7.min.js"></script>
+	<script type="text/javascript">jssor_1_slider_init();</script>	
+	<script type="text/javascript">
+		$(".search").click(function(){
+			$(".search-box").slideToggle("fast").find("input").focus();
+		});
+
+		$("nav li a").click(function() {
+			var target = $(this).attr("href");
+			$('html,body').animate({
+				scrollTop: $(target).offset().top},
+				'slow');
+		});
+	</script>   
+</body>
+</html>
